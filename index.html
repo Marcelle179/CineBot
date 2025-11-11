@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script type="module">
+  import { GoogleGenAI } from 'https://cdn.jsdelivr.net/npm/@google/genai';
+  window.GoogleGenAI = GoogleGenAI;
+</script>
+<script src="script.js" defer></script>
+</body>
+</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🎬 CineBot</h1>
+        </div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="message bot-message">
+                <p>Olá! Sou o CineBot. Diga-me qual gênero, ator ou tipo de história você procura, e eu te darei ótimas sugestões!</p>
+            </div>
+        </div>
+
+        <form class="chat-input-form" id="chatForm">
+            <input type="text" id="userInput" placeholder="Ex: Filmes de ficção científica dos anos 90" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
